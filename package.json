@@ -18,5 +18,8 @@
     "bugs": {
         "url": "https://github.com/artyomevsyukov/Final-Project-kurs-2/issues"
     },
-    "homepage": "https://github.com/artyomevsyukov/Final-Project-kurs-2#readme"
+    "homepage": "https://github.com/artyomevsyukov/Final-Project-kurs-2#readme",
+    "devDependencies": {
+        "rollup": "^4.21.1"
+    }
 }
