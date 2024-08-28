@@ -1,0 +1,22 @@
+{
+    "name": "final-project-kurs-2",
+    "version": "1.0.0",
+    "description": "single page app book",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/artyomevsyukov/Final-Project-kurs-2.git"
+    },
+    "keywords": [
+        "book"
+    ],
+    "author": "Artyom Evsyukov",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/artyomevsyukov/Final-Project-kurs-2/issues"
+    },
+    "homepage": "https://github.com/artyomevsyukov/Final-Project-kurs-2#readme"
+}
