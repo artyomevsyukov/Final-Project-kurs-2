@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "description": "single page app book",
     "main": "app.js",
+    "type": "module",
     "scripts": {
         "start": "live-server",
-        "build": "rollup",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "rollup -c --watch"
     },
     "repository": {
         "type": "git",
@@ -23,8 +23,11 @@
     "homepage": "https://github.com/artyomevsyukov/Final-Project-kurs-2#readme",
     "devDependencies": {
         "@eslint/js": "^9.9.1",
+        "@rollup/plugin-node-resolve": "^15.2.3",
         "eslint": "^9.9.1",
         "globals": "^15.9.0",
-        "rollup": "^4.21.1"
+        "live-server": "^1.2.2",
+        "rollup": "^4.21.1",
+        "rollup-plugin-import-css": "^3.5.1"
     }
 }
