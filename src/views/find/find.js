@@ -1,14 +1,14 @@
-import { AbstractView } from "../common/view.js";
+import { AbstractView } from "../../common/view";
 
-export class MainView extends AbstractView {
+export class Find extends AbstractView {
     constructor() {
         super();
-        this.setTitle("Поиск книг");
+        this.setTitle("Find");
     }
 
     render() {
         const main = document.createElement("div");
-        main.innerHTML = "Tecт!!!";
+        main.innerHTML = "Find";
         this.app.innerHTML = "";
         this.app.append(main);
     }
