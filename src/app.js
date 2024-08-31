@@ -1,12 +1,11 @@
-import { MainView } from "./views/main";
-import { Find } from "./views/find/find";
+import { MainView } from "./views/main/main";
 import { NotFound } from "./views/404/404";
 
 class App {
-    routes = [
-        { path: "", view: MainView },
-        { path: "#find", view: Find },
-    ];
+    routes = [{ path: "", view: MainView }];
+    appState = {
+        favorites: [],
+    };
     constructor() {
         window.addEventListener("hashchange", this.route.bind(this));
         this.route();
@@ -19,7 +18,7 @@ class App {
             (route) => route.path == location.hash
         );
         const view = routeObj ? routeObj.view : NotFound; // поставить страницу 404
-        this.currentView = new view();
+        this.currentView = new view(this.appState);
         this.currentView.render();
     }
 
