@@ -1148,9 +1148,13 @@
 
         appStateHook(path) {
             // Следи за рекурсией
+            // console.log(path);
             if (path === "favorites") {
                 console.log(path);
             }
+            // if (path === "buy") {
+            //     console.log(path);
+            // }
         }
 
         render() {
@@ -1160,6 +1164,7 @@
             this.app.append(main);
             this.renderHeader();
             // this.appState.favorites.push("ddddd");
+            // this.appState.buy.push("ddddd");
         }
 
         // потому что иногда надо будет рендерить только Header
@@ -1188,6 +1193,7 @@
         routes = [{ path: "", view: MainView }];
         appState = {
             favorites: [],
+            buy: [],
         };
         constructor() {
             window.addEventListener("hashchange", this.route.bind(this));
